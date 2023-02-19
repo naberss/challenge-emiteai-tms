@@ -1,0 +1,12 @@
+FROM openjdk:17-jdk-alpine3.13
+
+RUN apk add --no-cache bash
+
+WORKDIR /app
+
+COPY build/libs/challenge-emiteai-tms-1.0.0.jar challenge-emiteai-tms-app.jar
+
+EXPOSE 8080
+
+CMD ["java", "-jar", "challenge-emiteai-tms-app.jar"]
+
