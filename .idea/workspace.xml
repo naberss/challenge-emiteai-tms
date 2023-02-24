@@ -1,11 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="116673f1-db75-4b86-81c3-7f791b03e075" name="Changes" comment="" />
+    <list default="true" id="116673f1-db75-4b86-81c3-7f791b03e075" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/challenge-emiteai-tms.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/challenge-emiteai-tms.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/challenge-emiteai-tms/src/main/java/com/emiteai/challengeEmiteaiTms/controllers/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/challenge-emiteai-tms/src/main/java/com/emiteai/challengeEmiteaiTms/controllers/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/challenge-emiteai-tms/src/main/java/com/emiteai/challengeEmiteaiTms/dto/ErrorResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/challenge-emiteai-tms/src/main/java/com/emiteai/challengeEmiteaiTms/dto/ErrorResponseDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/challenge-emiteai-tms/src/main/java/com/emiteai/challengeEmiteaiTms/dto/ProductDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/challenge-emiteai-tms/src/main/java/com/emiteai/challengeEmiteaiTms/dto/ProductDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/challenge-emiteai-tms/src/main/java/com/emiteai/challengeEmiteaiTms/exception/handlers/DefaultExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/challenge-emiteai-tms/src/main/java/com/emiteai/challengeEmiteaiTms/exception/handlers/DefaultExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/challenge-emiteai-tms/src/main/java/com/emiteai/challengeEmiteaiTms/service/impl/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/challenge-emiteai-tms/src/main/java/com/emiteai/challengeEmiteaiTms/service/impl/OrderService.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/challenge-emiteai-tms">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -19,11 +51,50 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/dtd_lbmoreira/Desktop/GIT/challenge-emiteai-tms",
+    "last_opened_file_path": "/home/dtd_lbmoreira/Desktop/GIT/challenge-emiteai-tms/challenge-emiteai-tms",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.15432101",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.notifications",
+    "spring.configuration.checksum": "df6d331d0e2d5038f76cf14ba84042e4",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager" selected="Spring Boot.ChallengeEmiteaiTmsApplication">
+    <configuration name="ChallengeEmiteaiTmsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="challenge-emiteai-tms.challenge-emiteai-tms.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.emiteai.challengeEmiteaiTms.ChallengeEmiteaiTmsApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="challenge-emiteai-tms: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="challenge-emiteai-tms/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.challenge-emiteai-tms: Compose Deployment" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -33,6 +104,12 @@
       <option name="presentableId" value="Default" />
       <updated>1676518672582</updated>
       <workItem from="1676518673516" duration="9000" />
+      <workItem from="1676772407880" duration="555000" />
+      <workItem from="1676773165078" duration="461000" />
+      <workItem from="1676773780732" duration="116000" />
+      <workItem from="1676773907424" duration="914000" />
+      <workItem from="1676774837534" duration="198000" />
+      <workItem from="1676775046990" duration="220000" />
     </task>
     <servers />
   </component>

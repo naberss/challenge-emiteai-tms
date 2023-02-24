@@ -37,3 +37,6 @@ services:
       - SPRING_RABBITMQ_EXCHANGE=challenge-emiteai-tms-exchange
       - SPRING_RABBITMQ_ROUTING_KEY=challenge-emiteai-tms-routing-key
       - SPRING_RABBITMQ_QUEUE=challenge-emiteai-tms-queue
+      - SPRING_RABBITMQ_EXCHANGE_DLX=challenge-emiteai-tms-exchange-dlx
+      - SPRING_RABBITMQ_QUEUE_DLQ=challenge-emiteai-tms-queue-dlq
+      - JAVA_TOOL_OPTIONS=-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:8000

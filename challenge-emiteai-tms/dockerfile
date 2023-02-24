@@ -1,12 +1,14 @@
-FROM openjdk:17-jdk-alpine3.13
+#FROM gradle:7.4.0-jdk11 AS build
+#WORKDIR /app
+#COPY build.gradle settings.gradle ./
+#COPY src/ ./src/
+#RUN gradle build --no-daemon
 
-RUN apk add --no-cache bash
-
+FROM openjdk:11-jdk-slim
 WORKDIR /app
-
-COPY build/libs/challenge-emiteai-tms-1.0.0.jar challenge-emiteai-tms-app.jar
-
-EXPOSE 8080
-
-CMD ["java", "-jar", "challenge-emiteai-tms-app.jar"]
-
+COPY --from=build /app/build/libs/challenge-emiteai-tms-1.0.0.jar challenge-emiteai-tms-app.jar
+COPY newrelic/ /app/newrelic/
+# PORTA 8000 EXPOSTA PARA DEBUG DO PROCESSO RODANDO NO CONTAINER
+EXPOSE 8080 8000
+#INCLUIDO ARGUMENTO PARA INICIAR O APM CLIENT DO NEW RELIC
+CMD ["java", "-javaagent:/app/newrelic/newrelic.jar", "-jar", "challenge-emiteai-tms-app.jar"]

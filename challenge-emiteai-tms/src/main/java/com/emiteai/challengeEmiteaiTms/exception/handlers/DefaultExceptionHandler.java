@@ -1,9 +1,8 @@
 package com.emiteai.challengeEmiteaiTms.exception.handlers;
 
 
-import com.emiteai.challengeEmiteaiTms.dto.ErrorResponseDTO;
-import com.emiteai.challengeEmiteaiTms.exception.ElementNotFoundException;
-import com.emiteai.challengeEmiteaiTms.exception.GenericException;
+import com.emiteai.challengeEmiteaiTms.dto.ErrorResponseDto;
+import com.emiteai.challengeEmiteaiTms.exception.FailedOrderException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
@@ -19,19 +18,17 @@ public class DefaultExceptionHandler extends ResponseEntityExceptionHandler {
 
     private static final Logger log = LoggerFactory.getLogger(DefaultExceptionHandler.class);
 
-    @ExceptionHandler({GenericException.class})
-    public ResponseEntity<?> genericException(GenericException ex) {
+    @ExceptionHandler({FailedOrderException.class})
+    public ResponseEntity<?> genericException(FailedOrderException ex) {
         log.error(ex.getMessage(), ex);
         return buildResponse(HttpStatus.INTERNAL_SERVER_ERROR, ex);
     }
 
-    public ResponseEntity<ErrorResponseDTO> buildResponse(
-            final HttpStatus statusCode, final Exception exception) {
-        final ErrorResponseDTO errorResponse =
-                new ErrorResponseDTO(
+    public ResponseEntity<ErrorResponseDto> buildResponse(final HttpStatus statusCode, final Exception exception) {
+        final ErrorResponseDto errorResponse = null;
+                new ErrorResponseDto(
                         "Failed",
-                        List.of(
-                                exception.getLocalizedMessage() != null ? exception.getLocalizedMessage() : ""));
-        return new ResponseEntity(errorResponse, statusCode);
+                        List.of(exception.getLocalizedMessage() != null ? exception.getLocalizedMessage() : ""));
+        return new ResponseEntity<>(errorResponse, statusCode);
     }
 }

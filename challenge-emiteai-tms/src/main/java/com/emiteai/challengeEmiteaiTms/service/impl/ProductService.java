@@ -2,22 +2,23 @@ package com.emiteai.challengeEmiteaiTms.service.impl;
 
 import com.emiteai.challengeEmiteaiTms.data.domain.Product;
 import com.emiteai.challengeEmiteaiTms.data.repositories.ProductRepository;
-import com.emiteai.challengeEmiteaiTms.exception.ElementNotFoundException;
-import com.emiteai.challengeEmiteaiTms.service.GenericDaoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
-public class ProductService implements GenericDaoService {
+public class ProductService  {
 
     @Autowired
     private ProductRepository productRepository;
 
-    @Override
-    public Product findById(Long id) throws ElementNotFoundException {
-        return productRepository.findById(id).orElseThrow(() -> new ElementNotFoundException("Product",id));
+    public Product findById(Long id) /*throws ElementNotFoundException*/ {
+        return productRepository.findById(id).orElse(null)/*orElseThrow(() -> new ElementNotFoundException("Product",id))*/;
+    }
+
+    public boolean existsById(Long id) {
+        return productRepository.existsById(id);
     }
 
     /*@Override*/

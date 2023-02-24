@@ -1,6 +1,6 @@
 package com.emiteai.challengeEmiteaiTms.data.domain;
 
-import jakarta.persistence.*;
+import javax.persistence.*;
 import lombok.Data;
 
 import java.math.BigDecimal;
