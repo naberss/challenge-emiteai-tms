@@ -16,6 +16,6 @@ CREATE TABLE orders (
 
 CREATE TABLE tms_order (
   id SERIAL PRIMARY KEY,
-  order_id JSONB NOT NULL,
+  order_id JSONB,
   status TEXT NOT NULL
 );

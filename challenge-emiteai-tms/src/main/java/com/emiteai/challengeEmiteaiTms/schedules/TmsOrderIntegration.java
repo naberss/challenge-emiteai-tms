@@ -8,18 +8,12 @@ import org.springframework.stereotype.Service;
 @Service
 public class TmsOrderIntegration {
 
-
     @Autowired
     private TmsOrderService tmsOrderService;
-    boolean teste;
 
-
-    @Scheduled(cron = "0 */2 * * * *")
+    @Scheduled(cron = "0 */10 * * * *")
     public void TmsOrderScheduler(){
-
-        if(this.teste){
-         tmsOrderService.doProcess();
-        }
+        tmsOrderService.doProcess();
     }
 
 }
